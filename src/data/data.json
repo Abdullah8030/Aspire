@@ -1,7 +1,7 @@
 {
     "Header": {
 
-        "title": "We are a Landing Page",
+        "title": "We  a Landing Page",
         "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sed commodo nibh ante facilisis bibendum."
 
     },
@@ -105,7 +105,7 @@
         }
     ],
     "Contact": {
-        "address": "4321 California St, San Francisco, CA 12345 ",
+        "address": "4321 California RIYADH St, San Francisco, CA 12345 ",
         "phone": "+1 123 456 1234",
         "email": "info@company.com",
         "facebook": "fb.com",
