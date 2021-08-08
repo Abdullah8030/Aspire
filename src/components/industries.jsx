@@ -3,12 +3,12 @@ export const Industries = (props) => {
     <div id='industries' className='text-center'>
       <div className='container'>
         <div className='section-title'>
-          <h2>Industries</h2>
+          <h2>Industries </h2>
        
         </div>
         <div className='row'>
           {props.data
-            ? props.data.map((d, i) => (
+            ? props.data.map((d, i) => ( 
                 <div key={`${d.name}-${i}`} className='col-md-4'>
                   {' '}
                   <i className={d.icon}></i>
