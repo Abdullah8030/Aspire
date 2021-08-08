@@ -1,10 +1,10 @@
-export const Services = (props) => {
+export const Industries = (props) => {
   return (
-    <div id='services' className='text-center'>
+    <div id='industries' className='text-center'>
       <div className='container'>
         <div className='section-title'>
-          <h2>Services</h2>
-        
+          <h2>Industries</h2>
+       
         </div>
         <div className='row'>
           {props.data
@@ -12,7 +12,7 @@ export const Services = (props) => {
                 <div key={`${d.name}-${i}`} className='col-md-4'>
                   {' '}
                   <i className={d.icon}></i>
-                  <div className='service-desc'>
+                  <div className='industries-desc'>
                     <h3>{d.name}</h3>
                     <p>{d.text}</p>
                   </div>
@@ -24,3 +24,5 @@ export const Services = (props) => {
     </div>
   )
 }
+
+
