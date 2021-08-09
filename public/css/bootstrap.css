@@ -9,9 +9,7 @@ html {
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
 }
-body {
-  margin: 0;
-}
+
 article,
 aside,
 details,
@@ -4486,7 +4484,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
   .navbar-right {
     float: right !important;
-    margin-right: -15px;
+    display: flex;
+    margin-right: 11pc;
   }
   .navbar-right ~ .navbar-right {
     margin-right: 0;

@@ -26,6 +26,10 @@ export const Navigation = (props) => {
         >
           <ul className='nav navbar-nav navbar-right'>
           <li>
+              <a href='#page-top' className='page-scroll'>
+                Home
+              </a>
+            </li>  <li>
               <a href='#services' className='page-scroll'>
                 Services
               </a>
