@@ -24,11 +24,10 @@ export default function FormDialog() {
         Test your prodect now
       </Button>
       <Dialog open={open} onClose={handleClose} aria-labelledby="form-dialog-title" size="large">
-        <DialogTitle id="form-dialog-title" >Subscribe</DialogTitle>
+        <DialogTitle id="form-dialog-title" >Send request to test your prodect</DialogTitle>
         <DialogContent >
           <DialogContentText>
-            To subscribe to this website, please enter your email address here. We will send updates
-            occasionally.
+          
             </DialogContentText>
             <TextField
             autoFocus
@@ -71,7 +70,7 @@ export default function FormDialog() {
             Cancel
           </Button>
           <Button onClick={handleClose} color="primary">
-            Subscribe
+            Send
           </Button>
         </DialogActions>
       </Dialog>
