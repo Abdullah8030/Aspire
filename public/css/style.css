@@ -63,7 +63,7 @@ ul, ol {
 }
 ul
 {
-	padding: 0;
+	/* padding: 0; */
 	width: 30pc;
 	text-align: center;
 } 
@@ -116,7 +116,7 @@ hr {
 	bottom: -1px;
 	width: 0;
 	height: 2px;
-	background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
+	background: #7b9b43 !important;
 	content: "";
 	transition: width 0.2s;
 }
@@ -133,7 +133,7 @@ hr {
 	bottom: -1px !important;
 	width: 100% !important;
 	height: 2px !important;
-	background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%) !important;
+	background: #7b9b43 !important;
 	content: "" !important;
 	transition: width 0.2s !important;
 }
@@ -232,7 +232,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	font-weight: 300;
 	line-height: 30px;
 	margin: 0 auto;
-	margin-bottom: 60px;
+	margin-bottom: 20px;
 }
 header .intro-text {
 	padding-top: 350px;
@@ -305,7 +305,7 @@ header .intro-text {
 #about .about-text li:before {
 	content: '\f00c';
 	font-family: 'FontAwesome';
-	color: #5ca9fb;
+	color: #7b9b43;
 	font-size: 11px;
 	font-weight: 300;
 	padding-right: 8px;
@@ -409,7 +409,7 @@ header .intro-text {
 }
 #industries h3 {
 	font-weight: 500;
-	padding: 5px 0;
+	padding: 2px 0 5px;
 	color: #fff;
 }
 #industries p {
