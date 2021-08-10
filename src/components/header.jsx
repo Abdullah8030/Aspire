@@ -1,3 +1,6 @@
+import FormDialog from "./FormDialog"
+
+
 export const Header = (props) => {
   return (
     <header id='header'>
@@ -11,9 +14,11 @@ export const Header = (props) => {
                   <span></span>
                 </h1>
                 <p>{props.data ? props.data.paragraph : 'Loading'}</p>
-               
-            
-               
+    
+                 
+
+                  <FormDialog />
+   
               </div>
             </div>
           </div>
@@ -22,3 +27,6 @@ export const Header = (props) => {
     </header>
   )
 }
+
+
+
