@@ -20,24 +20,51 @@ export default function FormDialog() {
 
   return (
     <div>
-      <Button variant="outlined" color="primary" onClick={handleClickOpen}>
-        Open form dialog
+      <Button  variant="outlined" color="primary" onClick={handleClickOpen}>
+        Test your prodect now
       </Button>
-      <Dialog open={open} onClose={handleClose} aria-labelledby="form-dialog-title">
-        <DialogTitle id="form-dialog-title">Subscribe</DialogTitle>
-        <DialogContent>
+      <Dialog open={open} onClose={handleClose} aria-labelledby="form-dialog-title" size="large">
+        <DialogTitle id="form-dialog-title" >Subscribe</DialogTitle>
+        <DialogContent >
           <DialogContentText>
             To subscribe to this website, please enter your email address here. We will send updates
             occasionally.
-          </DialogContentText>
-          <TextField
+            </DialogContentText>
+            <TextField
             autoFocus
             margin="dense"
             id="name"
-            label="Email Address"
-            type="email"
+            label="Name"
+            type="name"
             fullWidth
-          />
+            size="medium"
+          /> 
+          <TextField
+          
+          margin="dense"
+          id="name"
+          label="Email Address"
+          type="email"
+          fullWidth
+        /> 
+        
+        <TextField
+        
+        margin="dense"
+        id="name"
+        label="Phone"
+        type="Phone"
+        fullWidth
+      /> 
+      
+      <TextField
+      margin="dense"
+      id="name"
+      label="Company "
+      type="name "
+      fullWidth
+    />
+          
         </DialogContent>
         <DialogActions>
           <Button onClick={handleClose} color="primary">

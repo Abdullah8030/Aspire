@@ -2,7 +2,7 @@
 body {
 	width: 90% !important;
 	margin: 0 auto	!important;
-	padding: 0 ;
+	
 	
 
 }
@@ -63,12 +63,7 @@ a:hover, a:focus {
 ul, ol {
 	list-style: none;
 }
-ul
-{
-	padding: 0;
-	width: 30pc;
-	text-align: justify;
-} 
+ 
 
 ol {
 	padding: 0;
@@ -88,6 +83,7 @@ hr {
 #menu {
 	padding: 15px;
 	transition: all 0.8s;
+	
 }
 #menu.navbar-default {
 	background-color: #fff;
@@ -185,6 +181,9 @@ hr {
 	border-radius: 25px;
 	transition: all 0.5s linear;
 	border: 0;
+	
+
+	
 }
 .btn-custom:hover, .btn-custom:focus, .btn-custom.focus, .btn-custom:active, .btn-custom.active {
 	color: #fff;
@@ -639,6 +638,11 @@ color: #777;
 	color: #fff;
 	border-radius: 50%;
 	transition: all 0.3s;
+
+	
+	
+	
+ 
 }
 #contact .social i.fa:hover {
 	color: #608dfd;
