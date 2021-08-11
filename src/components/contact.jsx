@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import emailjs from 'emailjs-com'
 
-
 const initialState = {
   name: '',
   email: '',
@@ -55,6 +54,7 @@ export const Contact = (props) => {
                         className='form-control'
                         placeholder='Name'
                         required
+                        style={{ fontSize:"15px" }}
                         onChange={handleChange}
                       />
                       <p className='help-block text-danger'></p>
@@ -66,6 +66,7 @@ export const Contact = (props) => {
                         type='email'
                         id='email'
                         name='email'
+                        style={{ fontSize:"15px" }}
                         className='form-control'
                         placeholder='Email'
                         required
