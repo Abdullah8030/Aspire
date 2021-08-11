@@ -9,7 +9,7 @@ export const Industries = (props) => {
         <div className='row'>
           {props.data
             ? props.data.map((d, i) => ( 
-                <div key={`${d.name}-${i}`} className='col-md-4'>
+                <div key={`${d.name}-${i}`} className='col-md-4' id="moveUp">
                   {' '}
                   <i className={d.icon}></i>
                   <div className='industries-desc'>
