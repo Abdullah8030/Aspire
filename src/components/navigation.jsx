@@ -1,7 +1,7 @@
 export const Navigation = (props) => {
   return (
     <nav id='menu' className='navbar navbar-default navbar-fixed-top'>
-      <div className='container'>
+      <div className='navBarContainer'>
         <div className='navbar-header'>
           <button
             type='button'
