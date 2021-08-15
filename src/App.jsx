@@ -7,12 +7,11 @@ import { Contact } from './components/contact'
 import JsonData from './data/data.json'
 import SmoothScroll from 'smooth-scroll'
 import { Industries } from './components/industries'
-
-
 export const scroll = new SmoothScroll('a[href*="#"]', {
   speed: 1000,
   speedAsDuration: true,
 })
+
 
 const App = () => {
   const [landingPageData, setLandingPageData] = useState({})
@@ -28,11 +27,7 @@ const App = () => {
       <Industries data={landingPageData.Industries}/>
      
       <About data={landingPageData.About} />
-      <Contact data={landingPageData.Contact} />
-     
-   
-      
-      
+      <Contact data={landingPageData.Contact} />  
       </div>
   )
 }
