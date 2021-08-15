@@ -8,6 +8,8 @@ import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
 import { makeStyles } from '@material-ui/core';
 import Grid from '@material-ui/core/Grid';
+import FormControl from '@material-ui/core/FormControl';
+import Select from '@material-ui/core/Select';
 
 const useStyles = makeStyles((theme) => ({
     root:{
@@ -50,6 +52,12 @@ export default function FormDialog() {
 
   const classes = useStyles();
 
+  const [type, setType] = React.useState('');
+
+  function changeType(event) {
+    setType(event.target.value);
+  }
+
   const classes2 = useStylesAli();
 
 
@@ -63,7 +71,7 @@ export default function FormDialog() {
 
   return (
     <div>
-      <Button variant="contained" style={{ background:"#8ca945",color:"#fff",fontSize:"15px",fontWeight:500,textTransform:"none" }} onClick={handleClickOpen}>
+      <Button variant="contained" style={{ background:"#8ca945",color:"#fff",fontSize:"18px",fontWeight:500,textTransform:"none" }} onClick={handleClickOpen}>
         Test your prodect now
       </Button>
       <Dialog open={open} onClose={handleClose} aria-labelledby="form-dialog-title" size="large">
@@ -103,7 +111,7 @@ export default function FormDialog() {
                         /> 
                 </Grid>
 
-                <Grid item xs={12}>
+                <Grid item xs={6}>
                     <TextField
                     style={{ borderColor:"#8ca945" }}
                     inputProps={{style: {fontSize: 16,borderColor:"#8ca945"}}}
@@ -119,7 +127,7 @@ export default function FormDialog() {
                 </Grid>
 
        
-              <Grid item xs={12}>
+              <Grid item xs={6}>
                       <TextField
                       color="#8ca945"
                       className={classes2.root}
@@ -127,12 +135,57 @@ export default function FormDialog() {
                       InputLabelProps={{style: {fontSize: 16}}}
                       margin="dense"
                       id="name"
-                      label="Company "
+                      label="Company"
                       variant="outlined"
                       type="name "
                       fullWidth
                     />
               </Grid>
+
+
+              <Grid item xs={12}>
+                      <FormControl variant="outlined" className={classes2.root} style={{ margin:"0 auto", marginTop:10, width:"100%" }}>
+                                <Select
+                                native
+                                value={type}
+                                defaultValue=""
+                                onChange={changeType}
+                                label="Service"
+                                style={{ fontSize:"14.5px" }}
+                                inputProps={{
+                                    name: 'service',
+                                    id: 'outlined-age-native-simple',
+                                }}
+                                >
+                                <option value="default">-Select the service-</option>
+                                <option value="Test Advisory & Consulting Services">Test Advisory & Consulting Services</option>
+                                <option value="Functional Testing">Functional Testing</option>
+                                <option value="Non-Functional testing">Non-Functional testing</option>
+                                <option value="User Acceptance Testing (UAT)">User Acceptance Testing (UAT)</option>
+                                </Select>
+                            </FormControl>
+              </Grid>
+
+              <Grid item xs={12}>
+
+              <TextField
+                      multiline
+                      rows={6}
+                      rowsMax={8}
+                      color="#8ca945"
+                      className={classes2.root}
+                      inputProps={{style: {fontSize: 16}}}
+                      InputLabelProps={{style: {fontSize: 16}}}
+                      margin="dense"
+                      id="name"
+                      label="How Can Aspire Technologies Help?"
+                      variant="outlined"
+                      type="name "
+                      fullWidth
+              />
+
+              </Grid>
+
     </Grid>
           
         </DialogContent>
