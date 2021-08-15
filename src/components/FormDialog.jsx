@@ -6,9 +6,52 @@ import DialogActions from '@material-ui/core/DialogActions';
 import DialogContent from '@material-ui/core/DialogContent';
 import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
+import { makeStyles } from '@material-ui/core';
+import Grid from '@material-ui/core/Grid';
+
+const useStyles = makeStyles((theme) => ({
+    root:{
+      padding:"2px 0px 0px 24px",
+      "& h2":{
+        fontSize:"21px",
+        textTransform:"none"
+      },
+      "& p":{
+        fontSize:"21px",
+      }
+  }
+}));
+
+
+
+
+const useStylesAli = makeStyles({
+  root: {
+    //when no action
+    "& .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline": {
+      borderColor: "#7D8483"
+    },
+    //name of filed
+    "& .MuiInputLabel-outlined.Mui-focused": {
+      color: "#8ca945"
+    },
+    //when focesd on textFiled
+    "& .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline": {
+      borderColor: "#8ca945"
+    },
+  }
+});
+
+
+
 
 export default function FormDialog() {
   const [open, setOpen] = React.useState(false);
+
+  const classes = useStyles();
+
+  const classes2 = useStylesAli();
+
 
   const handleClickOpen = () => {
     setOpen(true);
@@ -20,57 +63,85 @@ export default function FormDialog() {
 
   return (
     <div>
-      <Button  variant="outlined" color="primary" onClick={handleClickOpen}>
+      <Button variant="contained" style={{ background:"#8ca945",color:"#fff",fontSize:"15px",fontWeight:500,textTransform:"none" }} onClick={handleClickOpen}>
         Test your prodect now
       </Button>
       <Dialog open={open} onClose={handleClose} aria-labelledby="form-dialog-title" size="large">
-        <DialogTitle id="form-dialog-title" >Send request to test your prodect</DialogTitle>
-        <DialogContent >
-          <DialogContentText>
-          
+        <DialogTitle id="form-dialog-title" className={classes.root}>Subscribe</DialogTitle>
+        <DialogContent>
+          <DialogContentText style={{ fontSize:"15px",fontWeight:500 }}>
+            To <span style={{ fontWeight:"bold",color:"#8ca945" }}>subscribe</span> to this website, please enter your email address here.We will send updates
+            occasionally.
             </DialogContentText>
-            <TextField
-            autoFocus
-            margin="dense"
-            id="name"
-            label="Name"
-            type="name"
-            fullWidth
-            size="medium"
-          /> 
-          <TextField
-          
-          margin="dense"
-          id="name"
-          label="Email Address"
-          type="email"
-          fullWidth
-        /> 
-        
-        <TextField
-        
-        margin="dense"
-        id="name"
-        label="Phone"
-        type="Phone"
-        fullWidth
-      /> 
-      
-      <TextField
-      margin="dense"
-      id="name"
-      label="Company "
-      type="name "
-      fullWidth
-    />
+
+            <Grid container spacing={1}>
+                <Grid item xs={6}>
+                    <TextField
+                    autoFocus
+                    margin="dense"
+                    id="name"
+                    label="Name"
+                    type="name"
+                    variant="outlined"
+                    fullWidth
+                    className={classes2.root}
+                    inputProps={{style: {fontSize: 16}}}
+                    InputLabelProps={{style: {fontSize: 16}}}
+                  />
+                </Grid>
+                <Grid item xs={6}>
+                  <TextField
+                          inputProps={{style: {fontSize: 16}}}
+                          InputLabelProps={{style: {fontSize: 16}}}
+                          className={classes2.root}
+                          margin="dense"
+                          id="name"
+                          label="Phone"
+                          type="Phone"
+                          variant="outlined"
+                          fullWidth
+                        /> 
+                </Grid>
+
+                <Grid item xs={12}>
+                    <TextField
+                    style={{ borderColor:"#8ca945" }}
+                    inputProps={{style: {fontSize: 16,borderColor:"#8ca945"}}}
+                    InputLabelProps={{style: {fontSize: 16}}}
+                    className={classes2.root}
+                    margin="dense"
+                    id="name"
+                    label="Email Address"
+                    type="email"
+                    variant="outlined"
+                    fullWidth
+                  />
+                </Grid>
+
+       
+              <Grid item xs={12}>
+                      <TextField
+                      color="#8ca945"
+                      className={classes2.root}
+                      inputProps={{style: {fontSize: 16}}}
+                      InputLabelProps={{style: {fontSize: 16}}}
+                      margin="dense"
+                      id="name"
+                      label="Company "
+                      variant="outlined"
+                      type="name "
+                      fullWidth
+                    />
+              </Grid>
+    </Grid>
           
         </DialogContent>
         <DialogActions>
-          <Button onClick={handleClose} color="primary">
+          <Button onClick={handleClose} style={{ fontWeight:"bold",fontSize:"13px",textTransform:"none" }}>
             Cancel
           </Button>
-          <Button onClick={handleClose} color="primary">
-            Send
+          <Button onClick={handleClose} style={{ fontWeight:"bold",color:"#8ca945",fontSize:"13px",textTransform:"none" }}>
+            Subscribe
           </Button>
         </DialogActions>
       </Dialog>

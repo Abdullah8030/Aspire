@@ -6,9 +6,9 @@ export const Industries = (props) => {
           <h2>Industries </h2>
        
         </div>
-        <div className='row'>
+        <div className='rowForIndustries'>
           {props.data
-            ? props.data.map((d, i) => ( 
+            ? props.data.map((d, i) => { return( 
                 <div key={`${d.name}-${i}`} className='col-md-4' id="moveUp">
                   {' '}
                   <i className={d.icon}></i>
@@ -17,7 +17,7 @@ export const Industries = (props) => {
                     <p>{d.text}</p>
                   </div>
                 </div>
-              ))
+              )})
             : 'loading'}
         </div>
       </div>
