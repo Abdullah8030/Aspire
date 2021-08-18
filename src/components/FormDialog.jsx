@@ -70,7 +70,7 @@ export default function FormDialog() {
   };
 
   return (
-    <div>
+    <div style={{ paddingTop:"2%" }}>
       <Button variant="contained" style={{ background:"#8ca945",color:"#fff",fontSize:"18px",fontWeight:500,textTransform:"none" }} onClick={handleClickOpen}>
         Test your prodect now
       </Button>
