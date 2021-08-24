@@ -209,28 +209,28 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 
 
 /* Header Section */
-						/* .intro {
-							
-							/* width: 100%; */
-							/* padding: 0; */
-							/* background: url(../img/intro-bg.jpg) center center no-repeat; */
-							/* background-color: #fff; */
-							/* -webkit-background-size: cover;
-							-moz-background-size: cover;
-							background-size: cover;
-							-o-background-size: cover; */
-						/* } */ */
-/* .overlay {
-	background: "#fff";
-	/* text-align: center; */
-	/* margin: 0 auto; */
-	/* padding-top: 150px; */
-/* } */ */
-/* .image{
-	height: auto;
-	width: 1000px;
-} */
+						.intro {
+							padding: 0;
+							/* padding-bottom: 1; */
+							/* overflow: hidden; */
+							/* width: 100%;
+							padding: 0;
+							/* background: url(../img/AspireFinalLOGO/png/01.png) center center no-repeat; */
+							/* background-color: #000; */
+							/* -webkit-background-size: cover; */
+							/* -moz-background-size: cover; */
+							/* background-size: cover; */
+							/* -o-background-size: cover; */
+						 }
 
+#background-video{
+	width: 100%;
+	min-height: 65vh;
+	max-height: 85vh;
+	object-fit: cover;
+	opacity: 0.8;
+	z-index: -5;
+}
 
 .intro h1 {
 	font-family: 'Raleway', sans-serif;
@@ -245,7 +245,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	color: #5ca9fb;
 }
 .intro p {
-	color: #fff;
+	color: rgb(160, 160, 160);
 	font-size: 22px;
 	font-weight: 300;
 	line-height: 30px;
@@ -761,6 +761,12 @@ color: #777;
 	}
 }
 
+@media (max-width: 1100px) {
+	img.image{
+		padding-right: 20px;
+	}
+	}
+
 /* -------------------------------------- slider */
 .slider{
 	position: relative;
@@ -779,9 +785,9 @@ color: #777;
 .right-arrow{
 	position: absolute;
 	top:50%;
-	right: 32px;
+	right: 16%;
 	font-size: 3.3rem;
-	color: black;
+	color: #8ca945;
 	z-index: 10;
 	cursor: pointer;
 	user-select: none;
@@ -793,9 +799,9 @@ color: #777;
 	user-select: none;
 	position: absolute;
 	top:50%;
-	left: 32px;
+	left: 13%;
 	font-size: 3.3rem;
-	color: black;
+	color: #8ca945;
 }
 
 .slide-off {

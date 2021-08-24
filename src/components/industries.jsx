@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 
 export const Industries = (props) => {
   return (
-    <div id='industries' className='text-center'>
+    <div id='industries' className='text-center' style={{ borderRadius:"5px",marginBottom:"5px" }}>
       <div className='container'>
         <div className='section-title'>
           <h2>Industries </h2>

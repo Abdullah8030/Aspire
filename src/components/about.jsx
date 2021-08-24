@@ -21,7 +21,7 @@ export const About = (props) => {
   const classes = useStyles();
 
   return (
-    <div id='about'>
+    <div id='about' style={{ marginBottom:"5px",borderRadius:"5px" }}>
       <div className='container'>
         <div className='row'>
           <Grid
@@ -41,7 +41,7 @@ export const About = (props) => {
               </Grid>
           
           <Grid item xs={12} sm={12} md={6}>
-                  <motion.div whileHover={{ scale:1.2,y:-20 }} className='col-xs-12 col-md-12'>
+                  <motion.div whileHover={{ scale:1.2 }} className='col-xs-12 col-md-12'>
                       <div className='about-text'>
                           <Grid>
                              
