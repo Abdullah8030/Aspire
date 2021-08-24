@@ -28,24 +28,22 @@ export const Header = (props) => {
   return (
         //------------------------------------------Not used  
         // <header id='header'>
-        // {/* <div className='overlay'> */}
-        //     {/* <div className='row'> */}
-        //------------------------
-        <div 
-        style={{ paddingBottom:"50px" }}
-        >
-                    <Grid
+        //  <div className='overlay'>
+            // <div className='row'>
+         <div className="intro" style={{ paddingTop:"80px",paddingBottom:"5px" }}>
+              <Grid
                       container
                       direction="row"
                       alignItems="center"
+                      style={{ position:"absolute",zIndex:"1" }}
                     >
                         <Grid item xs={6} sm={6} md={6} lg={6}>
                               <motion.div className="intro-text" transition={{ opacity: { duration: 2 },translateY:{ duration:2  } }} animate={{ opacity: shouldShowActions ? 1 : 0,translateY:"0px" }} initial={{ opacity:0,translateY:"-150px"  }}>
                                 <img className="imageHeader" src={"./img/AspireFinalLOGO/png/AspireLogofinal619.svg"} width="52%" height="auto"/>
-                                <h1 style={{ fontSize:"4vw",color:"#1f3b43" }}>
+                                <h1 style={{ fontSize:"4vw",color:"#fff" }}>
                                   {props.data ? props.data.title : 'Loading'}
                                 </h1>
-                                <p style={{ fontSize:"1.1vw" }}>(an <a href="https://exeder.com/" target="_blank" rel="noopener noreferrer" ><span  style={{ color:"#44849c",fontWeight:'bold' }}>EXEDER</span></a> company)</p>
+                                <p style={{ fontSize:"1.1vw",color:"#fff" }}>(an <a href="https://exeder.com/" target="_blank" rel="noopener noreferrer" ><span  style={{ color:"#44849c",fontWeight:'bold' }}>EXEDER</span></a> company)</p>
                                   <FormDialog /> 
                                   </motion.div>
                           </Grid>
@@ -58,20 +56,13 @@ export const Header = (props) => {
                          </Grid>
 
                    </Grid>
-          </div>
-    //---------------------------------------------------------------------------------------------------not Used   
-    //         {/* <img className="image" src="/img/portfolio/01-large.jpg" alt="presentation 1" /> */}
-    //             {/* <h1>
-    //               {props.data ? props.data.title : 'Loading'}
-    //               <span></span>
-    //             </h1>
-    //             <p>{props.data ? props.data.paragraph : 'Loading'}</p>
-    //               <FormDialog /> */}
-    //               {/* <Slide /> */}
-    //     {/* </div>
-    //   </div> */}
-    // // </header>
-    //------------------------------------------------------
+                   
+              <video id="background-video" style={{ borderRadius:"5px" }} src="/img/AspireFinalLOGO/png/video1.mp4" loop autoPlay muted>
+              </video>
+           </div>
+      //  </div>
+      // </div> 
+    // </header>
   )
 }
 

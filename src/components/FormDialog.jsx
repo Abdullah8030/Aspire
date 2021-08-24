@@ -73,7 +73,7 @@ export default function FormDialog() {
   return (
     <div style={{ paddingTop:"2%" }}>
       <Button variant="contained" style={{ background:"#8ca945",color:"#fff",fontSize:"1.3vw",fontWeight:500,textTransform:"none" }} onClick={handleClickOpen}>
-        Test your prodect now
+        Test your product now
       </Button>
       <Dialog open={open} onClose={handleClose} aria-labelledby="form-dialog-title" size="large">
         <DialogTitle id="form-dialog-title" className={classes.root}>Subscribe</DialogTitle>

@@ -21,14 +21,14 @@ export const Partners = (props) => {
   const classes = useStyles();
 
   return (
-    <div id='partners'>
+    <div id='partners' style={{ marginBottom:"5px",borderRadius:"5px" }}>
       <div className='container'>
         <div className='row'>
           <Grid
             container
             justifyContent="center"
           >
-          <Grid item xs={8} sm={8} md={8}>  
+          <Grid item xs={12} sm={8} md={8}>  
            
 
                   <Card className={classes.root} variant="outlined" style={{ background:"#fff",borderRadius:"15px" }}>

@@ -33,7 +33,7 @@ export const Contact = (props) => {
   }
   return (
     <div>
-      <div id='contact'>
+      <div id='contact' style={{ marginBottom:"5px",borderRadius:"5px" }}>
         <div className='container'>
           <div className='col-md-8'>
             <div className='row'>
@@ -96,7 +96,7 @@ export const Contact = (props) => {
               </form>
             </div>
           </div>
-          <motion.div whileHover={{ scale:1.2 }} className='col-md-3 col-md-offset-1 contact-info'>
+          <motion.div whileHover={{ y:-10 }} className='col-md-3 col-md-offset-1 contact-info'>
             <div className='contact-item'>
               <h3>Contact Info</h3>
               <p className='pInContactInfo'>
