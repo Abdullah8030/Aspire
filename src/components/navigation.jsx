@@ -1,3 +1,4 @@
+import Grid from '@material-ui/core/Grid';
 export const Navigation = (props) => {
   return (
     <nav id='menu' className='navbar navbar-default navbar-fixed-top'>
@@ -15,9 +16,12 @@ export const Navigation = (props) => {
             <span className='icon-bar'></span>{' '}
             <span className='icon-bar'></span>{' '}
           </button>
-          <a className='navbar-brand page-scroll' href='#page-top'>
-            aspire technologies
-          </a>{' '}
+          <div style={{ textAlign:"left",maxWidth:"300px" }}>
+                <a href='#page-top' className='page-scroll'>
+                          <img src={"./img/AspireFinalLOGO/png/AspireLogofinal619.svg"} width="28%" height="auto"/>
+                          {/* <h4 style={{ fontSize:"1.5vw",fontWeight:"bold",position:"relative",top:"5px",left:"5px" }}>Aspire Technologies</h4> */}
+                </a>
+          </div>
         </div>
 
         <div

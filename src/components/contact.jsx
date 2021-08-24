@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import emailjs from 'emailjs-com'
+import { motion } from 'framer-motion';
 
 const initialState = {
   name: '',
@@ -95,7 +96,7 @@ export const Contact = (props) => {
               </form>
             </div>
           </div>
-          <div className='col-md-3 col-md-offset-1 contact-info'>
+          <motion.div whileHover={{ scale:1.2 }} className='col-md-3 col-md-offset-1 contact-info'>
             <div className='contact-item'>
               <h3>Contact Info</h3>
               <p className='pInContactInfo'>
@@ -121,26 +122,26 @@ export const Contact = (props) => {
                 {props.data ? props.data.email : 'loading'}
               </p>
             </div>
-          </div>
+          </motion.div>
           <div className='col-md-12'>
             <div className='row'>
               <div className='social'>
                 <ul>
-                  <li>
+                  <motion.li whileHover={{ scale:1.4,y:-10 }}>
                     <a href={props.data ? props.data.facebook : '/'}>
                       <i className='fa fa-facebook'></i>
                     </a>
-                  </li>
-                  <li>
+                  </motion.li>
+                  <motion.li whileHover={{ scale:1.4,y:-10 }}>
                     <a href={props.data ? props.data.twitter : '/'}>
                       <i className='fa fa-twitter'></i>
                     </a>
-                  </li>
-                  <li>
+                  </motion.li>
+                  <motion.li whileHover={{ scale:1.4,y:-10 }}>
                     <a href={props.data ? props.data.youtube : '/'}>
                       <i className='fa fa-youtube'></i>
                     </a>
-                  </li>
+                  </motion.li>
                 </ul>
               </div>
             </div>

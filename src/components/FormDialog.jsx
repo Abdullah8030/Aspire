@@ -10,6 +10,7 @@ import { makeStyles } from '@material-ui/core';
 import Grid from '@material-ui/core/Grid';
 import FormControl from '@material-ui/core/FormControl';
 import Select from '@material-ui/core/Select';
+import { motion } from 'framer-motion';
 
 const useStyles = makeStyles((theme) => ({
     root:{
@@ -71,7 +72,7 @@ export default function FormDialog() {
 
   return (
     <div style={{ paddingTop:"2%" }}>
-      <Button variant="contained" style={{ background:"#8ca945",color:"#fff",fontSize:"18px",fontWeight:500,textTransform:"none" }} onClick={handleClickOpen}>
+      <Button variant="contained" style={{ background:"#8ca945",color:"#fff",fontSize:"1.3vw",fontWeight:500,textTransform:"none" }} onClick={handleClickOpen}>
         Test your prodect now
       </Button>
       <Dialog open={open} onClose={handleClose} aria-labelledby="form-dialog-title" size="large">

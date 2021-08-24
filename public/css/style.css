@@ -66,8 +66,14 @@ ul
 {
 	padding: 0;
 	width: 30pc;
+	/* height: auto; */
 	text-align: center;
-} 
+}
+ul.aboutUs {
+	width: 100%;
+}
+
+
 
 ol {
 	padding: 0;
@@ -225,6 +231,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	width: 1000px;
 } */
 
+
 .intro h1 {
 	font-family: 'Raleway', sans-serif;
 	color: #fff;
@@ -246,9 +253,10 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	margin-bottom: 20px;
 }
 .intro-text {
-	padding-top: 320px;
-	padding-bottom: 320px;
 	text-align: center;
+	padding-top: 120px;
+	padding-bottom: 120px;
+	animation: fadein 3s;
 }
 
 	.intro-text h2::before  {
@@ -260,10 +268,6 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 		left: 16.9%;
 	}
 
-
-img{
-	width: 100%;
-}
 /* Features Section */
 #features {
 	padding: 100px 0;
@@ -355,19 +359,18 @@ img{
 	font-weight: 300;
 	padding-right: 8px;
 }
-#about img {
+/* #about img {
 	width: 520px;
 	margin-top: 20px;
 	background: #fff;
 	border-right: 0;
 	box-shadow: 0 0 50px rgba(0,0,0,0.06);
-}
+} */
 #about p {
 	line-height: 22px;
 	margin: 20px 0;
 	text-align: justify;
 	margin-left: 70px;
-	width: 100%;
 }
 /* ------------------------------------------Partners */
 #partners {
@@ -766,10 +769,11 @@ color: #777;
 	align-items: center;
 	padding-top: 120px;
 	padding-bottom: 120px;
+	animation: scaling 3s;
 }
 .image{
-	width: 1000px;
-	height: 650px;
+	width: 97%;
+	height: auto;
 	border-radius: 10px;
 }
 .right-arrow{
@@ -829,3 +833,24 @@ color: #777;
 	margin: 0 5px;
 	background: rgb(140, 169, 69);
   }
+
+  /* for animation */
+
+
+  /* @keyframes fadein {
+	from {
+	  transform: translateY(-150px);opacity: 0;
+	}
+	to {
+	  scale: (1.08);opacity: 1;
+	}
+  }
+  @keyframes scaling {
+	from {
+	   transform: scale(1.08);
+	}
+  } */
+
+  /* #moveUpForP:hover {
+	padding-bottom:8px;
+  } */
