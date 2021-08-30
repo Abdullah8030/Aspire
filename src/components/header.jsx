@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import FormDialog from "./FormDialog"
 import CustomSlider from "./CustomSlider";
 import Grid from '@material-ui/core/Grid';
@@ -39,7 +39,7 @@ export const Header = (props) => {
                     >
                         <Grid item xs={6} sm={6} md={6} lg={6}>
                               <motion.div className="intro-text" transition={{ opacity: { duration: 2 },translateY:{ duration:2  } }} animate={{ opacity: shouldShowActions ? 1 : 0,translateY:"0px" }} initial={{ opacity:0,translateY:"-150px"  }}>
-                                <img className="imageHeader" src={"./img/AspireFinalLOGO/png/AspireLogofinal619.svg"} width="52%" height="auto"/>
+                                <img alt="Header" className="imageHeader" src={"./img/AspireFinalLOGO/png/AspireLogofinal619.svg"} width="52%" height="auto"/>
                                 <h1 style={{ fontSize:"4vw",color:"#fff" }}>
                                   {props.data ? props.data.title : 'Loading'}
                                 </h1>

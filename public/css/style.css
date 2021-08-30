@@ -232,6 +232,17 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	z-index: -5;
 }
 
+#background-video2{
+	width: 98%;
+	max-height: 50vh;
+	min-height: 45vh;
+	object-fit: cover;
+	/* opacity: 0.8; */
+	z-index: -5;
+}
+
+
+
 .intro h1 {
 	font-family: 'Raleway', sans-serif;
 	color: #fff;
@@ -374,14 +385,17 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 }
 /* ------------------------------------------Partners */
 #partners {
-	padding: 100px 0;
-   	background: url(../office/08.jpg) center center no-repeat;
-
+	/* padding: 100px 0; */
+	/* background: url("https://mobirise.com/extensions/businessm4/assets/images/background715.jpg"),#000; */
+	/* background-image: url('/img/AspireFinalLOGO/png/background.jpg'); */
+	/* background-color: #6DB3F2; */
+	/* background-position: 0; */
+	/* background-size: cover; */
 }
 .line {
 	position: relative;
 	content: "";
-	background: #000;
+	background: linear-gradient(to right, #5c874d 0%, #a2c43c 100%);
 	height: 5px;
 	width: 90px;
 }
@@ -489,7 +503,9 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 #industries .service-desc {
 	margin-bottom: 40px;
 }
-
+.ali{
+	opacity: 1 !important;
+}
 
 /* Portfolio Section */
 #portfolio {
