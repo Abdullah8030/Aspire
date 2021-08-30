@@ -30,7 +30,7 @@ export const Header = (props) => {
         // <header id='header'>
         //  <div className='overlay'>
             // <div className='row'>
-         <div className="intro" style={{ paddingTop:"80px",paddingBottom:"5px" }}>
+         <div className="intro" style={{ paddingBottom:"5px" }}>
               <Grid
                       container
                       direction="row"
