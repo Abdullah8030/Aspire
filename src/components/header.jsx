@@ -35,9 +35,10 @@ export const Header = (props) => {
                       container
                       direction="row"
                       alignItems="center"
+                      justifyContent="center"
                       style={{ position:"absolute",zIndex:"1" }}
                     >
-                        <Grid item xs={6} sm={6} md={6} lg={6}>
+                        <Grid item xs={8} sm={8} md={8} lg={8}>
                               <motion.div className="intro-text" transition={{ opacity: { duration: 2 },translateY:{ duration:2  } }} animate={{ opacity: shouldShowActions ? 1 : 0,translateY:"0px" }} initial={{ opacity:0,translateY:"-150px"  }}>
                                 <img alt="Header" className="imageHeader" src={"./img/AspireFinalLOGO/png/AspireLogofinal619.svg"} width="52%" height="auto"/>
                                 <h1 style={{ fontSize:"4vw",color:"#fff" }}>
@@ -48,12 +49,12 @@ export const Header = (props) => {
                                   </motion.div>
                           </Grid>
 
-                         <Grid item xs={6} sm={6} md={6} lg={6}>
+                         {/* <Grid item xs={6} sm={6} md={6} lg={6}>
                             {/* not Used */}
                             {/* <Slide /> */}
 
-                            <CustomSlider />
-                         </Grid>
+                            {/* <CustomSlider /> */}
+                         {/* </Grid> */}
 
                    </Grid>
                    
