@@ -39,12 +39,12 @@ export const CustomSlider = () => {
       };
     }, [lastYPos]);
 
-    React.useEffect(() => {
-      const interval = setInterval(() => {
-        setCurrent(current === length-1 ? 0:current + 1);
-      }, 5000);
-      return () => clearInterval(interval);
-    }, [shouldShowActions]);
+    // React.useEffect(() => {
+    //   const interval = setInterval(() => {
+    //     setCurrent(current === length-1 ? 0:current + 1);
+    //   }, 5000);
+    //   return () => clearInterval(interval);
+    // }, [shouldShowActions]);
 
     
     if (!Array.isArray(slideImages) || slideImages.length <= 0) {
@@ -79,7 +79,7 @@ export const CustomSlider = () => {
 
           <div className="container-dots" >
                 {Array.from({length: slideImages.length}).map((item, index) => (
-                  <div className={current === index ? "dot-active" : "dot"} onClick={() => moveToDot(index)}></div>
+                  <div  key={index} className={current === index ? "dot-active" : "dot"} onClick={() => moveToDot(index)}></div>
                 ))}
             </div>  
 
