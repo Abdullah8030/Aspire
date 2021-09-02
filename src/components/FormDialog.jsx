@@ -97,6 +97,7 @@ export default function FormDialog() {
 
   const handleClose = () => {
     setOpen(false);
+    setPhone(966);
   };
 
   const checkNumber = (e) =>{
@@ -107,7 +108,7 @@ export default function FormDialog() {
   } 
 
   return (
-    <div style={{ paddingTop:"2%" }}>
+    <div>
       <Button variant="contained" style={{ background:"#8ca945",color:"#fff",fontSize:"1.3vw",fontWeight:500,textTransform:"none" }}
        onClick={handleClickOpen}>
         Test your product now
@@ -115,7 +116,7 @@ export default function FormDialog() {
       <Dialog open={open} onClose={handleClose} aria-labelledby="form-dialog-title" size="large">
         <DialogTitle id="form-dialog-title" className={classes.root}>Send Request</DialogTitle>
         <DialogContent>
-        <form validate onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit}>
                   <DialogContentText style={{ fontSize:"15px",fontWeight:500 , color:'black'}}>
                     To <span style={{ fontWeight:"bold",color:"#8ca945" }}>Test your product</span> , please fill this form here.Then We will send updates occasionally.
                     </DialogContentText>
@@ -175,7 +176,6 @@ export default function FormDialog() {
                             <Grid item xs={6}>
                                     <TextField
                                     required
-                                    color="#8ca945"
                                     className={classes2.root}
                                     inputProps={{style: {fontSize: 16}}}
                                     InputLabelProps={{style: {fontSize: 16}}}
@@ -195,7 +195,6 @@ export default function FormDialog() {
                                               required
                                               native
                                               value={type}
-                                              defaultValue=""
                                               onChange={changeType}
                                               label="Service"
                                               style={{ fontSize:"14.5px" }}
@@ -219,9 +218,8 @@ export default function FormDialog() {
                             <TextField
                                     required
                                     multiline
-                                    rows={6}
-                                    rowsMax={8}
-                                    color="#8ca945"
+                                    minRows={6}
+                                    maxRows={8}
                                     className={classes2.root}
                                     inputProps={{style: {fontSize: 16}}}
                                     InputLabelProps={{style: {fontSize: 16}}}

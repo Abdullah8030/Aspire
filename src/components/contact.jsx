@@ -44,7 +44,8 @@ export const Contact = (props) => {
                   get back to you as soon as possible.
                 </p>
               </div>
-              <form name='sentMessage' validate onSubmit={handleSubmit}>
+              {/* ???????????????????????????????????????????????????????????????????????????? */}
+              <form name='sentMessage' onSubmit={handleSubmit}>
                 <div className='row'>
                   <div className='col-md-6'>
                     <div className='form-group'>
@@ -94,8 +95,11 @@ export const Contact = (props) => {
                   Send Message
                 </button>
               </form>
+                            {/* ???????????????????????????????????????????????????????????????????????????? */}
+
             </div>
           </div>
+          {/* ---------------------------------------------------------------------------------- */}
           <motion.div whileHover={{ y:-10 }} className='col-md-3 col-md-offset-1 contact-info'>
             <div className='contact-item'>
               <h3>Contact Info</h3>
@@ -123,6 +127,7 @@ export const Contact = (props) => {
               </p>
             </div>
           </motion.div>
+        {/* ---------------------------------------------------------------------------------- */}
           <div className='col-md-12'>
             <div className='row'>
               <div className='social'>
@@ -147,17 +152,18 @@ export const Contact = (props) => {
             </div>
           </div>
         </div>
+      {/* ---------------------------------------------------------------------------------- */}
       </div>
+
+      {/* ---------------------------------------------------------------------------------- */}
       <div id='footer'>
         <div className='container text-center'>
           <p>
             &copy; 2021 Aspire Technologies{' '}
-            <a href='MDS' rel='nofollow'>
-              TemplateWire
-            </a>
           </p>
         </div>
       </div>
+    {/* ---------------------------------------------------------------------------------- */}
     </div>
   )
 }

@@ -24,13 +24,13 @@ const App = () => {
     <div>
       <Navigation />
       <Header data={landingPageData.Header} />
-      <Services data={landingPageData.Services} />
+      <Services data={landingPageData.Services} /> 
       <Industries data={landingPageData.Industries}/>
      
-      <Partners />
+       <Partners /> 
 
       <About data={landingPageData.About} />
-      <Contact data={landingPageData.Contact} />  
+      <Contact data={landingPageData.Contact} />   
       </div>
   )
 }

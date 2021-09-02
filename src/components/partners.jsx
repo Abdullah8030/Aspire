@@ -22,7 +22,7 @@ export const Partners = (props) => {
   return (
     <div id='partners' style={{ marginBottom:"150px",borderRadius:"5px" }}>
       <div>
-      <video id="background-video2" style={{ borderRadius:"5px",position:"absolute" }} src="/img/AspireFinalLOGO/png/video4.mp4" loop autoPlay muted/>
+      <video id="background-video2" style={{ borderRadius:"5px",position:"absolute" }} src="/img/AspireFinalLOGO/png/video4.mp4" loop autoPlay muted playsInline/>
             <div className='container' style={{ left:"20%" }}>
               <div style={{ marginTop:"60px" }}>
                 <Grid
